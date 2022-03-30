@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="FZ4-Yf-guW">
             <objects>
-                <viewController id="TYc-E2-c35" sceneMemberID="viewController">
+                <viewController id="TYc-E2-c35" customClass="ViewController" customModule="GatchaAdaSim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKc-7A-yQI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
