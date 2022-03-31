@@ -59,6 +59,15 @@
                                     <segue destination="wPD-Ft-nwQ" kind="show" id="e7Y-c5-ghO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-bN-eXH">
+                                <rect key="frame" x="174" y="782" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="yK1-yN-WTe" kind="show" id="L4s-E4-mNu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXy-BM-hGY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,6 +78,16 @@
             </objects>
             <point key="canvasLocation" x="1621.7391304347827" y="89.732142857142847"/>
         </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="15H-PE-iWe">
+            <objects>
+                <hostingController id="yK1-yN-WTe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fOe-Sd-xTP"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNb-Sf-g8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="805"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="vt4-ie-YvH">
             <objects>
@@ -78,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-Fo-Ncl">
-                                <rect key="frame" x="87" y="134" width="240" height="245"/>
+                                <rect key="frame" x="87" y="183" width="240" height="245"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="oQZ-95-Duw" kind="embed" id="9g4-HK-1EX"/>
