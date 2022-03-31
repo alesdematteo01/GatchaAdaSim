@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PulledCharacter : View {
+struct PulledCharacter: View {
     
     var passedInCharacter: Character?
     var updateColor: (UIColor) -> Void

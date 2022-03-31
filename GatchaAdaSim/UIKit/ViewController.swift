@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -15,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBSegueAction func toInventory(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: InventoryView())
+    }
 }
 
