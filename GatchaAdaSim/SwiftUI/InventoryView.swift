@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct InventoryView: View {
+    
+    @EnvironmentObject var appData: AppData
+    
+    var columns: [GridItem] = [
+        GridItem(.fixed(100), spacing: 12),
+        GridItem(.fixed(100), spacing: 12),
+        GridItem(.fixed(100), spacing: 12),
+        GridItem(.fixed(100), spacing: 12),
+        GridItem(.fixed(100), spacing: 12)
+    ]
+    
     var body: some View {
-        Text("Hello")
+        VStack{
+        Text("Inventory")
+            .font(.title)
+            .multilineTextAlignment(.center)
+        Spacer()
+            ScrollView(.vertical, showsIndicators: false){
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 32){
+                    ForEach(appData.characters.indices, id: \.self){ index in
+                        InventoryCharacter(character: appData.characters[index])
+                    }
+
+                }
+            }
+        }
     }
 }
 
