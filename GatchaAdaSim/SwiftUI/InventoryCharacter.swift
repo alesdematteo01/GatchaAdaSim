@@ -14,7 +14,7 @@ struct InventoryCharacter: View {
         ZStack{
             RoundedRectangle(cornerRadius: 50)
                 .foregroundColor(Color.gray)
-                .frame(width: 200, height: 300, alignment: .center)
+                .frame(width: 150, height: 250, alignment: .center)
             VStack{
                 Circle()
                     .frame(width: 100, height: 100, alignment: .center)

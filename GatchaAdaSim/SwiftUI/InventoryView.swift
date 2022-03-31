@@ -9,14 +9,11 @@ import SwiftUI
 
 struct InventoryView: View {
     
-    @EnvironmentObject var appData: AppData
+    
     
     var columns: [GridItem] = [
-        GridItem(.fixed(100), spacing: 12),
-        GridItem(.fixed(100), spacing: 12),
-        GridItem(.fixed(100), spacing: 12),
-        GridItem(.fixed(100), spacing: 12),
-        GridItem(.fixed(100), spacing: 12)
+        GridItem(.fixed(100), spacing: 100),
+        GridItem(.fixed(100), spacing: 100)
     ]
     
     var body: some View {
@@ -26,14 +23,15 @@ struct InventoryView: View {
             .multilineTextAlignment(.center)
         Spacer()
             ScrollView(.vertical, showsIndicators: false){
-                LazyVGrid(columns: columns, alignment: .leading, spacing: 32){
-                    ForEach(appData.characters.indices, id: \.self){ index in
-                        InventoryCharacter(character: appData.characters[index])
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 100){
+                    ForEach(characters.indices, id: \.self){ index in
+                        InventoryCharacter(character: characters[index])
                     }
 
                 }
             }
         }
+        .padding(.leading, 15)
     }
 }
 

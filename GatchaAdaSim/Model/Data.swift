@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class AppData : ObservableObject {
-    @Published var characters: [Character] = [
+
+    var characters: [Character] = [
         Character(
             name: "Giovanni",
             surname: "Monaco",
@@ -71,4 +71,4 @@ class AppData : ObservableObject {
         
     }
     
-}
+
