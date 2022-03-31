@@ -17,7 +17,8 @@ class PullViewController: UIViewController {
     }
     
     @IBSegueAction func embedImage(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: PulledCharacter())
+        var character : Character?
+        return UIHostingController(coder: coder, rootView: PulledCharacter(character: character!))
     }
     
     

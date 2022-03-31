@@ -18,7 +18,7 @@ import UIKit
         ),
         Character(
             name: "Domenico",
-            surname: "Tancredi",
+            surname: "Tangredi",
             rarity: "5",
             rarityColor: UIColor(named: "Yellow")
         ),

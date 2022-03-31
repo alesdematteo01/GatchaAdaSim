@@ -12,18 +12,29 @@ struct InventoryCharacter: View {
     var character : Character
     var body: some View{
         ZStack{
-            RoundedRectangle(cornerRadius: 50)
-                .foregroundColor(Color.gray)
-                .frame(width: 150, height: 250, alignment: .center)
+            RoundedRectangle(cornerRadius: 40)
+                .foregroundColor(Color(character.rarityColor!))
+                .frame(width: 165, height: 250, alignment: .center)
             VStack{
-                Circle()
+                
+//                Circle()
+//                    .frame(width: 100, height: 100, alignment: .center)
+//                    .foregroundColor(Color.white)
+//                    .padding()
+                
+                PulledCharacter(character: character)
                     .frame(width: 100, height: 100, alignment: .center)
-                    .foregroundColor(Color.white)
-                    .padding()
-                Text("Roba")
-                Text("Stelle")
+                
+//                Text("Roba")
+//                Text("Stelle")
+//                    .padding(.bottom)
+//                Text("x1")
+                
+                Text(character.name)
+                Text(character.surname)
                     .padding(.bottom)
-                Text("x1")
+                Text("x"+String(character.pulledCounter))
+                
             }
         }
     }

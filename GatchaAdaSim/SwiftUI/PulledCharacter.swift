@@ -12,6 +12,7 @@ struct PulledCharacter: View {
 //    var passedInCharacter: Character?
 //    var updateColor: (UIColor) -> Void
     
+    @State var character : Character
     
     @State private var currentColor: Color = .gray
     
@@ -23,7 +24,7 @@ struct PulledCharacter: View {
     
     var body: some View {
         Button(action: {
-            currentColor = .random
+            currentColor = Color(character.rarityColor!)
 //            updateColor(UIColor(currentColor))
         }, label: {
             ZStack {
@@ -41,11 +42,11 @@ struct PulledCharacter: View {
                         .rotationEffect(Angle(degrees: Double(i)))
                         .opacity(opacity)
                 }
-//                Image("\(passedInCharacter?.imageName ?? "")_clear")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .padding()
-//                    .opacity(progress)
+                Image("\(character.imageName)")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                    .opacity(progress)
             }
         })
         .onAppear {

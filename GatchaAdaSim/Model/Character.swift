@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Character {
+struct Character : Hashable {
     var name: String
     var surname: String
     var imageName: String {
@@ -16,4 +16,7 @@ struct Character {
     }
     var rarity: String?
     var rarityColor: UIColor?
+    
+    var isPulled : Bool = true
+    var pulledCounter : Int = 0
 }
