@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1622" y="805"/>
         </scene>
-        <!--View Controller-->
+        <!--Pull View Controller-->
         <scene sceneID="vt4-ie-YvH">
             <objects>
-                <viewController id="wPD-Ft-nwQ" sceneMemberID="viewController">
+                <viewController id="wPD-Ft-nwQ" customClass="PullViewController" customModule="GatchaAdaSim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="85N-Yh-nbs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
