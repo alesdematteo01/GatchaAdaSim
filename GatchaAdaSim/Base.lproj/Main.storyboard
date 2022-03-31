@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tu0-ut-9dA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tu0-ut-9dA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,7 +63,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="yK1-yN-WTe" kind="show" id="L4s-E4-mNu"/>
+                                            <segue destination="yK1-yN-WTe" kind="show" destinationCreationSelector="toInventory:" id="L4s-E4-mNu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,7 +110,14 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-Fo-Ncl">
                                 <rect key="frame" x="87" y="183" width="240" height="245"/>
                                 <connections>
-                                    <segue destination="oQZ-95-Duw" kind="embed" id="9g4-HK-1EX"/>
+                                    <segue destination="oQZ-95-Duw" kind="embed" destinationCreationSelector="embedImage:" id="9g4-HK-1EX"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kj5-cM-ZDh">
+                                <rect key="frame" x="87" y="508" width="240" height="259"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="4XC-ud-4aD" kind="embed" destinationCreationSelector="embedDescription:" id="An5-1g-VvF"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -130,12 +137,20 @@
             <point key="canvasLocation" x="2444.9275362318845" y="89.732142857142847"/>
         </scene>
         <!--Hosting Controller-->
+        <scene sceneID="ZUy-G9-ytC">
+            <objects>
+                <hostingController id="4XC-ud-4aD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDs-kh-skn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3272" y="303"/>
+        </scene>
+        <!--Hosting Controller-->
         <scene sceneID="ovs-hO-b8r">
             <objects>
                 <hostingController id="oQZ-95-Duw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lt4-ev-Oun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3346" y="90"/>
+            <point key="canvasLocation" x="3272" y="-128"/>
         </scene>
     </scenes>
     <resources>

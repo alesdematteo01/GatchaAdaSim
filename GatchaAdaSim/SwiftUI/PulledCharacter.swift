@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PulledCharacter: View {
     
-    var passedInCharacter: Character?
-    var updateColor: (UIColor) -> Void
+//    var passedInCharacter: Character?
+//    var updateColor: (UIColor) -> Void
     
     
     @State private var currentColor: Color = .gray
@@ -24,7 +24,7 @@ struct PulledCharacter: View {
     var body: some View {
         Button(action: {
             currentColor = .random
-            updateColor(UIColor(currentColor))
+//            updateColor(UIColor(currentColor))
         }, label: {
             ZStack {
                 Circle()
@@ -41,15 +41,15 @@ struct PulledCharacter: View {
                         .rotationEffect(Angle(degrees: Double(i)))
                         .opacity(opacity)
                 }
-                Image("\(passedInCharacter?.imageName ?? "")_clear")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                    .opacity(progress)
+//                Image("\(passedInCharacter?.imageName ?? "")_clear")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .padding()
+//                    .opacity(progress)
             }
         })
         .onAppear {
-            currentColor = Color(uiColor: passedInCharacter?.rarityColor ?? .gray)
+//            currentColor = Color(uiColor: passedInCharacter?.rarityColor ?? .gray)
             withAnimation(animation) {
                 progress = 1.0
             }

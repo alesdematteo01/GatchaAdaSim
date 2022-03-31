@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class PullViewController: UIViewController {
     
@@ -15,4 +16,12 @@ class PullViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBSegueAction func embedImage(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: PulledCharacter())
+    }
+    
+    
+    @IBSegueAction func embedDescription(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: PulledCharacterDescription())
+    }
 }
