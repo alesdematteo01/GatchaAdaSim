@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+
     @IBSegueAction func embedAnimation(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: AnimationView())
     }
