@@ -17,6 +17,6 @@ struct Character : Hashable {
     var rarity: String?
     var rarityColor: UIColor?
     
-    var isPulled : Bool = true
+    var isPulled : Bool = false
     var pulledCounter : Int = 0
 }
