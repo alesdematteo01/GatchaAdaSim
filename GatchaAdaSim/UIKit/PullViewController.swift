@@ -23,7 +23,7 @@ class PullViewController: UIViewController {
     @IBSegueAction func embedImage(_ coder: NSCoder) -> UIViewController? {
         
         //            let rarityArray = ["3","3","3","3","3","3","4","4","5"]
-        let rarityArray = ["3", "3", "3", "3", "3", "3", "3", "5"]
+        let rarityArray = ["3", "3", "3", "3", "3", "3", "3", "4", "4", "4", "5"]
         
         let selectedRarity = rarityArray.randomElement()
         

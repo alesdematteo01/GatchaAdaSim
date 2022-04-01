@@ -1,0 +1,62 @@
+//
+//  PulledCharacterInventory.swift
+//  GatchaAdaSim
+//
+//  Created by Raffaele Siciliano on 01/04/22.
+//
+
+import SwiftUI
+
+struct PulledCharacterInventory: View {
+    @State var character : Character
+    
+    private let animation = Animation.easeInOut(duration: 2.5).repeatForever()
+    private let angles = Array(stride(from: 1.0, through: 360.0, by: 36.0*2))
+    private let opacity = 0.15
+    
+    @State private var progress = 0.0
+    
+    var body: some View {
+        VStack{
+            Button(action: {
+            }, label: {
+                ZStack {
+//                    Circle()
+//                        .foregroundColor(
+//                            Color(character.rarityColor!)
+//                        )
+//                        .opacity(opacity)
+//                    ForEach(angles, id: \.self) { i in
+//                        Circle()
+//                            .trim(from: 0.0, to: progress)
+//                            .foregroundColor(
+//                                Color(character.rarityColor!)
+//                            )
+//                            .rotationEffect(Angle(degrees: Double(i)))
+//                            .opacity(opacity)
+//                    }
+                    Image("\(character.imageName)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                }
+            })
+            HStack{
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                if character.rarity == "4" {
+                    Image(systemName: "star.fill")
+                }
+                if character.rarity == "5" {
+                    Image(systemName: "star.fill")
+                    Image(systemName: "star.fill")
+                }
+            }
+            .onAppear {
+                    withAnimation(animation) {
+                    }
+            }
+        }
+    }
+}

@@ -25,6 +25,7 @@
 		44B5B64927F4ACF3008BD417 /* GatchaAdaSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B64827F4ACF3008BD417 /* GatchaAdaSimTests.swift */; };
 		44B5B65327F4ACF3008BD417 /* GatchaAdaSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B65227F4ACF3008BD417 /* GatchaAdaSimUITests.swift */; };
 		44B5B65527F4ACF3008BD417 /* GatchaAdaSimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B65427F4ACF3008BD417 /* GatchaAdaSimUITestsLaunchTests.swift */; };
+		58B37F4A27F7497400A59AF2 /* PulledCharacterInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B37F4927F7497400A59AF2 /* PulledCharacterInventory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		44B5B64E27F4ACF3008BD417 /* GatchaAdaSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatchaAdaSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5B65227F4ACF3008BD417 /* GatchaAdaSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatchaAdaSimUITests.swift; sourceTree = "<group>"; };
 		44B5B65427F4ACF3008BD417 /* GatchaAdaSimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatchaAdaSimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58B37F4927F7497400A59AF2 /* PulledCharacterInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulledCharacterInventory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				447A3FD227F5D48900199027 /* PulledCharacter.swift */,
+				58B37F4927F7497400A59AF2 /* PulledCharacterInventory.swift */,
 				4419386127F5F9C500301637 /* InventoryCharacter.swift */,
 				447A3FDB27F5E21D00199027 /* PulledCharacterDescription.swift */,
 				449D595527F73A9800F728EA /* AnimationView.swift */,
@@ -321,6 +324,7 @@
 				449D595627F73A9800F728EA /* AnimationView.swift in Sources */,
 				447A3FD627F5D56B00199027 /* Extensions.swift in Sources */,
 				447A3FD827F5D65C00199027 /* PullViewController.swift in Sources */,
+				58B37F4A27F7497400A59AF2 /* PulledCharacterInventory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,8 +22,8 @@ struct InventoryCharacter: View {
 //                    .foregroundColor(Color.white)
 //                    .padding()
                 
-                PulledCharacter(character: character)
-                    .frame(width: 100, height: 100, alignment: .center)
+                PulledCharacterInventory(character: character)
+                    .frame(width: 150, height: 150, alignment: .center)
                 
 //                Text("Roba")
 //                Text("Stelle")
@@ -34,7 +34,7 @@ struct InventoryCharacter: View {
                 Text(character.surname)
                     .padding(.bottom)
                 Text("x"+String(character.pulledCounter))
-                
+                    .padding(.bottom)
             }
         }
     }

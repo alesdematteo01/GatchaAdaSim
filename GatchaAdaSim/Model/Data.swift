@@ -85,6 +85,16 @@ import UIKit
             surname: "Trotta",
             rarity: "3",
             rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Umberto",
+            surname: "L'Unicorno",
+            rarity: "4",
+            rarityColor: UIColor(named: "Grape")
+        ), Character(
+            name: "Pasqualo",
+            surname: "Lo Squalo",
+            rarity: "4",
+            rarityColor: UIColor(named: "Grape")
         )
     ]
     
