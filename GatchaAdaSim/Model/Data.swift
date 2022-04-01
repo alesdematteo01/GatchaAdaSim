@@ -45,6 +45,46 @@ import UIKit
             surname: "Pereira",
             rarity: "5",
             rarityColor: UIColor(named: "Yellow")
+        ), Character(
+            name: "Raffaele",
+            surname: "Siciliano",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Alessandra",
+            surname: "De Matteo",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Antonio",
+            surname: "Facciolli",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Davide",
+            surname: "Belardi",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Eleonora",
+            surname: "Franco",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Francesco",
+            surname: "Pirone",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Gianluca",
+            surname: "Lucchesi",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
+        ), Character(
+            name: "Maria",
+            surname: "Trotta",
+            rarity: "3",
+            rarityColor: UIColor(named: "Mint")
         )
     ]
     
