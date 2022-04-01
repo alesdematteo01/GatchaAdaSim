@@ -35,8 +35,4 @@ class PullViewController: UIViewController {
         
         return UIHostingController(coder: coder, rootView: PulledCharacter(character: pulledCharacter!))
     }
-    
-    @IBSegueAction func embedDescription(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: PulledCharacterDescription())
-    }
 }

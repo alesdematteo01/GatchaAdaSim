@@ -18,34 +18,41 @@ struct PulledCharacter: View {
     @State private var progress = 0.0
     
     var body: some View {
-        Button(action: {
-        }, label: {
-            ZStack {
-                Circle()
-                    .foregroundColor(
-                        Color(character.rarityColor!)
-                    )
-                    .opacity(opacity)
-                ForEach(angles, id: \.self) { i in
+        VStack{
+            Button(action: {
+            }, label: {
+                ZStack {
                     Circle()
-                        .trim(from: 0.0, to: progress)
                         .foregroundColor(
                             Color(character.rarityColor!)
                         )
-                        .rotationEffect(Angle(degrees: Double(i)))
                         .opacity(opacity)
+                    ForEach(angles, id: \.self) { i in
+                        Circle()
+                            .trim(from: 0.0, to: progress)
+                            .foregroundColor(
+                                Color(character.rarityColor!)
+                            )
+                            .rotationEffect(Angle(degrees: Double(i)))
+                            .opacity(opacity)
+                    }
+                    Image("\(character.imageName)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                        .opacity(progress)
                 }
-                Image("\(character.imageName)")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                    .opacity(progress)
+            })
+            .onAppear {
+                withAnimation(animation) {
+                    progress = 1.0
+                }
             }
-        })
-        .onAppear {
-            withAnimation(animation) {
-                progress = 1.0
-            }
+            .padding(.bottom)
+            Spacer()
+            PulledCharacterDescription(character: character)
+            Spacer()
+            Spacer()
         }
     }
     
