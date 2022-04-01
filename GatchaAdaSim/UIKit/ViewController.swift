@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBSegueAction func embedAnimation(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: AnimationView())
+    }
+    
     @IBSegueAction func toInventory(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: InventoryView(characters: characters))
     }

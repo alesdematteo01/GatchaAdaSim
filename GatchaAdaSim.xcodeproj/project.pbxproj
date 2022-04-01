@@ -15,6 +15,7 @@
 		447A3FD827F5D65C00199027 /* PullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A3FD727F5D65C00199027 /* PullViewController.swift */; };
 		447A3FDA27F5D7A900199027 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A3FD927F5D7A900199027 /* InventoryView.swift */; };
 		447A3FDC27F5E21D00199027 /* PulledCharacterDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A3FDB27F5E21D00199027 /* PulledCharacterDescription.swift */; };
+		449D595627F73A9800F728EA /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D595527F73A9800F728EA /* AnimationView.swift */; };
 		44B5B63227F4ACF2008BD417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B63127F4ACF2008BD417 /* AppDelegate.swift */; };
 		44B5B63427F4ACF2008BD417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B63327F4ACF2008BD417 /* SceneDelegate.swift */; };
 		44B5B63627F4ACF2008BD417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5B63527F4ACF2008BD417 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		447A3FD727F5D65C00199027 /* PullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullViewController.swift; sourceTree = "<group>"; };
 		447A3FD927F5D7A900199027 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		447A3FDB27F5E21D00199027 /* PulledCharacterDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulledCharacterDescription.swift; sourceTree = "<group>"; };
+		449D595527F73A9800F728EA /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		44B5B62E27F4ACF2008BD417 /* GatchaAdaSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GatchaAdaSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5B63127F4ACF2008BD417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5B63327F4ACF2008BD417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				447A3FD227F5D48900199027 /* PulledCharacter.swift */,
 				4419386127F5F9C500301637 /* InventoryCharacter.swift */,
 				447A3FDB27F5E21D00199027 /* PulledCharacterDescription.swift */,
+				449D595527F73A9800F728EA /* AnimationView.swift */,
 				447A3FD927F5D7A900199027 /* InventoryView.swift */,
 			);
 			path = SwiftUI;
@@ -315,6 +318,7 @@
 				447A3FD327F5D48900199027 /* PulledCharacter.swift in Sources */,
 				44B5B63427F4ACF2008BD417 /* SceneDelegate.swift in Sources */,
 				447A3FCD27F5D0C300199027 /* Character.swift in Sources */,
+				449D595627F73A9800F728EA /* AnimationView.swift in Sources */,
 				447A3FD627F5D56B00199027 /* Extensions.swift in Sources */,
 				447A3FD827F5D65C00199027 /* PullViewController.swift in Sources */,
 			);
