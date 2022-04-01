@@ -9,12 +9,7 @@ import SwiftUI
 
 struct PulledCharacter: View {
     
-//    var passedInCharacter: Character?
-//    var updateColor: (UIColor) -> Void
-    
     @State var character : Character
-    
-    @State private var currentColor: Color = .gray
     
     private let animation = Animation.easeInOut(duration: 2.5).repeatForever()
     private let angles = Array(stride(from: 1.0, through: 360.0, by: 36.0*2))
@@ -24,20 +19,18 @@ struct PulledCharacter: View {
     
     var body: some View {
         Button(action: {
-            currentColor = Color(character.rarityColor!)
-//            updateColor(UIColor(currentColor))
         }, label: {
             ZStack {
                 Circle()
                     .foregroundColor(
-                        currentColor
+                        Color(character.rarityColor!)
                     )
                     .opacity(opacity)
                 ForEach(angles, id: \.self) { i in
                     Circle()
                         .trim(from: 0.0, to: progress)
                         .foregroundColor(
-                            currentColor
+                            Color(character.rarityColor!)
                         )
                         .rotationEffect(Angle(degrees: Double(i)))
                         .opacity(opacity)
@@ -50,7 +43,6 @@ struct PulledCharacter: View {
             }
         })
         .onAppear {
-//            currentColor = Color(uiColor: passedInCharacter?.rarityColor ?? .gray)
             withAnimation(animation) {
                 progress = 1.0
             }

@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
 
     @IBSegueAction func toInventory(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: InventoryView())
+        return UIHostingController(coder: coder, rootView: InventoryView(characters: characters))
     }
 }
 

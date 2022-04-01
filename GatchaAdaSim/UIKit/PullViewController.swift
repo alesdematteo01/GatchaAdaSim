@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 import SwiftUI
 
+
+
 class PullViewController: UIViewController {
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +21,20 @@ class PullViewController: UIViewController {
     }
     
     @IBSegueAction func embedImage(_ coder: NSCoder) -> UIViewController? {
-        var character : Character?
-        return UIHostingController(coder: coder, rootView: PulledCharacter(character: character!))
+        
+        //            let rarityArray = ["3","3","3","3","3","3","4","4","5"]
+        let rarityArray = ["5", "5", "5"]
+        
+        let selectedRarity = rarityArray.randomElement()
+        
+        let myArray : [Character] = characters.filter{
+            $0.rarity == selectedRarity
+        }
+        
+        let pulledCharacter : Character? = myArray.randomElement()
+        
+        return UIHostingController(coder: coder, rootView: PulledCharacter(character: pulledCharacter!))
     }
-    
     
     @IBSegueAction func embedDescription(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: PulledCharacterDescription())

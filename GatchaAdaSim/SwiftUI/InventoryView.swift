@@ -9,6 +9,8 @@ import SwiftUI
 
 struct InventoryView: View {
     
+    var characters : [Character]
+    
     var columns: [GridItem] = [
         GridItem(.fixed(100), spacing: 100),
         GridItem(.fixed(100), spacing: 100)
@@ -22,7 +24,7 @@ struct InventoryView: View {
         Spacer()
             ScrollView(.vertical, showsIndicators: false){
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 20){
-                    ForEach(characters.filter { $0.isPulled }, id: \.self){ pulledCharacter in
+                    ForEach(characters.filter{$0.isPulled}, id: \.self){ pulledCharacter in
                         InventoryCharacter(character: pulledCharacter)
                     }
 
@@ -34,8 +36,8 @@ struct InventoryView: View {
     }
 }
 
-struct InventoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        InventoryView()
-    }
-}
+//struct InventoryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InventoryView()
+//    }
+//}
