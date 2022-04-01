@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tu0-ut-9dA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tu0-ut-9dA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -164,17 +164,11 @@
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-Fo-Ncl">
-                                <rect key="frame" x="87" y="183" width="240" height="245"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-Fo-Ncl">
+                                <rect key="frame" x="53" y="183" width="308" height="599"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="oQZ-95-Duw" kind="embed" destinationCreationSelector="embedImage:" id="9g4-HK-1EX"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kj5-cM-ZDh">
-                                <rect key="frame" x="87" y="508" width="240" height="259"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="4XC-ud-4aD" kind="embed" destinationCreationSelector="embedDescription:" id="An5-1g-VvF"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvR-5S-WEr">
@@ -194,12 +188,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hqd-pM-WwK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Hqd-pM-WwK" firstAttribute="bottom" secondItem="TfO-Fo-Ncl" secondAttribute="bottom" constant="434" id="4Lf-u9-BFu"/>
-                            <constraint firstItem="TfO-Fo-Ncl" firstAttribute="leading" secondItem="Hqd-pM-WwK" secondAttribute="leading" constant="87" id="XhM-VR-otY"/>
-                            <constraint firstItem="TfO-Fo-Ncl" firstAttribute="top" secondItem="Hqd-pM-WwK" secondAttribute="top" constant="95" id="mgg-Bm-pHc"/>
-                            <constraint firstItem="TfO-Fo-Ncl" firstAttribute="centerX" secondItem="85N-Yh-nbs" secondAttribute="centerX" id="uOQ-11-gMI"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AwV-Cp-RO3"/>
                 </viewController>
