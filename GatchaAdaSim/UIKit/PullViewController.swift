@@ -33,6 +33,17 @@ class PullViewController: UIViewController {
         
         let pulledCharacter : Character? = myArray.randomElement()
         
+        func saveInPulled(_ character: Character) {
+            let index = characters.firstIndex { $0.name == character.name }
+            if characters[index!].isPulled == true {
+                characters[index!].pulledCounter += 1
+            } else {
+                characters[index!].isPulled = true
+                characters[index!].pulledCounter += 1
+            }
+        }
+        saveInPulled(pulledCharacter!)
+        
         return UIHostingController(coder: coder, rootView: PulledCharacter(character: pulledCharacter!))
     }
     
