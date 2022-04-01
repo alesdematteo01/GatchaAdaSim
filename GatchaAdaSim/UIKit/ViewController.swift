@@ -15,7 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBSegueAction func embedAnimation(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: AnimationView())
+    }
+    
     @IBSegueAction func toInventory(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: InventoryView())
     }
