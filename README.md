@@ -1,5 +1,7 @@
 # GatchaAdaSim
 
+![This is an image](https://github.com/alesdematteo01/GatchaAdaSim/blob/d7709ea4370e45f2ef57b4164e2962b874f827f4/Schermata%202022-04-08%20alle%2014.20.50.png)
+
 GatchaAdaSim is a Gatcha Simulator, starring the people of this Apple Academy year! 
 
 This application is realized with the following features:
